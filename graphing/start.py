@@ -39,7 +39,8 @@ def main():
     delta = 4
     
     # start the lsof cmd in the background
-    cmd='/usr/bin/sudo /usr/bin/lsof -r {} -F 0 > {} &'
+#    cmd='/usr/bin/sudo /usr/bin/lsof -r {} -F 0 > {} &'
+    cmd = '/usr/bin/sudo python dump_meminfo.py {} {} &'
     cmd=cmd.format(interval, args.outfile)
     os.system(cmd);
 
@@ -57,9 +58,12 @@ def main():
     while int(time.time()) <= ((start_time + (len(name_list)+2)*interval) + delta):
         time.sleep(2)
 
-    cmd='/usr/bin/sudo /usr/bin/killall lsof'
+    #cmd='/usr/bin/sudo /usr/bin/killall lsof'
+    #subprocess.call(shlex.split(cmd))
+
+    cmd='/usr/bin/sudo /usr/bin/killall python'
     subprocess.call(shlex.split(cmd))
-        
+
 if __name__ == '__main__':
     main()
     
