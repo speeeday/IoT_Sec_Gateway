@@ -54,7 +54,7 @@ def main():
         connect_container_dummy(name_list[i])
 
     # wait to get the last stats
-    while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
+    while int(time.time()) <= ((start_time + (len(name_list)+2)*interval) + delta):
         time.sleep(2)
 
     cmd='/usr/bin/sudo /usr/bin/killall lsof'
