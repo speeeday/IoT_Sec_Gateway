@@ -36,7 +36,7 @@ def main():
     # interval in seconds
     interval = 30
     # delta here to avoid mismeasurement errors
-    delta = 2
+    delta = 4
     
     # start the lsof cmd in the background
     cmd='/usr/bin/sudo /usr/bin/lsof -r {} -F 0 > {} &'
