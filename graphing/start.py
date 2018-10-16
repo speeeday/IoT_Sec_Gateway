@@ -23,6 +23,7 @@ def get_names(number):
 def main():
     parser=argparse.ArgumentParser(description='Connect container to vswitch')
     parser.add_argument('--container', '-C', required=True, type=str)
+    parser.add_argument('--outfile', '-o', required=True, type=str)
 #    parser.add_argument('--name', '-N', required=True, type=str)
     parser.add_argument('--instances', '-n', required=True, type=int)
     args=parser.parse_args()
@@ -38,7 +39,7 @@ def main():
     
     # start the lsof cmd in the background
     cmd='sudo lsof -r {} -F 0 > {} &'
-    cmd.format(interval, output_filename)
+    cmd.format(interval, outfile)
     subprocess.check_call(shlex.split(cmd))
     start_time = int(time.time())
     
