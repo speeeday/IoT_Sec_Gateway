@@ -3,6 +3,7 @@ import shlex
 import subprocess
 import itertools
 import time
+import os
 
 # Syntax: python start.py -C snort_icmp_block -n 4
 
@@ -38,20 +39,21 @@ def main():
     delta = 2
     
     # start the lsof cmd in the background
-    cmd='sudo lsof -r {} -F 0 > {} &'
-    cmd.format(interval, outfile)
-    subprocess.check_call(shlex.split(cmd))
+    cmd='/usr/bin/sudo /usr/bin/lsof -r {} -F 0 > {} &'
+    cmd=cmd.format(interval, args.outfile)
+    os.system(cmd);
+
     start_time = int(time.time())
     
     for i in range(0, len(name_list)):
         while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
-            sleep(2)
+            time.sleep(2)
         start_containers(args.container, name_list[i])
         connect_container_dummy(name_list[i])
 
     # wait to get the last stats
     while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
-        sleep(2)
+        time.sleep(2)
 
     cmd='/usr/bin/sudo /usr/bin/killall lsof'
     subprocess.call(shlex.split(cmd))
