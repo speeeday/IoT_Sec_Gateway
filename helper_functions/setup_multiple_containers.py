@@ -3,6 +3,7 @@ import shlex
 import subprocess
 import itertools
 import ipaddress
+import time
 
 NODE_0='192.1.1.2'
 NODE_1='10.1.1.2'
@@ -54,6 +55,12 @@ def connect_container(bridge, client_ip, server_ip, container_name):
         cmd=cmd.format(bridge, in_port, server_ip, client_ip, out_port)
         subprocess.check_call(shlex.split(cmd))
 
+def connect_container_dummy(container_name):
+    cmd='/usr/bin/sudo docker network connect network2 {}'
+    cmd=cmd.format(container_name)
+    subprocess.check_call(shlex.split(cmd))
+
+    
 def start_containers(container, name):
     cmd='/usr/bin/sudo /usr/bin/docker run -itd --rm --network=none --privileged --name {} {}'
     cmd=cmd.format(name, container)
@@ -84,11 +91,21 @@ def main():
     name_list = get_names(args.instances)
     client_ips = get_ip_range(NODE_0, args.instances)
     server_ips = get_ip_range(NODE_1, args.instances)
-    for i in range(0, len(name_list)):
-        start_containers(args.container, name_list[i])
-        attach_container(BRIDGE, name_list[i])
-        connect_container(BRIDGE, client_ips[0], server_ips[i], name_list[i])
 
+    # interval in seconds
+    interval = 30
+    
+    # start the lsof cmd in the background
+    cmd='sudo lsof -r {} -F 0 > {} &'
+    cmd.format(interval, output_filename)
+    subprocess.check_call(shlex.split(cmd))
+    start_time = int(time.time())
+    
+    for i in range(0, len(name_list)):
+        while int(time.time()) <= (start_time + (i+1)*interval):
+            sleep(2)
+        start_containers(args.container, name_list[i])
+        connect_container_dummy(name_list[i])
 if __name__ == '__main__':
     main()
     
