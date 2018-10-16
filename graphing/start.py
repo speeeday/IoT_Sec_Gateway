@@ -33,6 +33,8 @@ def main():
 
     # interval in seconds
     interval = 30
+    # delta here to avoid mismeasurement errors
+    delta = 2
     
     # start the lsof cmd in the background
     cmd='sudo lsof -r {} -F 0 > {} &'
@@ -41,10 +43,18 @@ def main():
     start_time = int(time.time())
     
     for i in range(0, len(name_list)):
-        while int(time.time()) <= (start_time + (i+1)*interval):
+        while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
             sleep(2)
         start_containers(args.container, name_list[i])
         connect_container_dummy(name_list[i])
+
+    # wait to get the last stats
+    while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
+        sleep(2)
+
+    cmd='/usr/bin/sudo /usr/bin/killall lsof'
+    subprocess.call(shlex.split(cmd))
+        
 if __name__ == '__main__':
     main()
     

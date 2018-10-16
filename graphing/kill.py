@@ -11,6 +11,11 @@ def docker_killall(name):
     cmd=cmd.format(name)
     subprocess.call(shlex.split(cmd))
 
+def lsof_killall(name):
+    cmd='/usr/bin/sudo /usr/bin/killall lsof'
+    subprocess.call(shlex.split(cmd))
+
+    
 def main():
     parser=argparse.ArgumentParser(description='Clean up containers and switch ports after experiment')
     parser.add_argument('--number', '-n', required=True, type=int)
