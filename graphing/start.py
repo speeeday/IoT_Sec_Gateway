@@ -44,15 +44,17 @@ def main():
     os.system(cmd);
 
     start_time = int(time.time())
-    
+
+    # start at (i+2) so that we can get one controlled measurement
+
     for i in range(0, len(name_list)):
-        while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
+        while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
             time.sleep(2)
         start_containers(args.container, name_list[i])
         connect_container_dummy(name_list[i])
 
     # wait to get the last stats
-    while int(time.time()) <= ((start_time + (i+1)*interval) + delta):
+    while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
         time.sleep(2)
 
     cmd='/usr/bin/sudo /usr/bin/killall lsof'
