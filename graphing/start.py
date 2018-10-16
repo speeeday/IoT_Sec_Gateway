@@ -8,12 +8,12 @@ import os
 # Syntax: python start.py -C snort_icmp_block -n 4
 
 def start_containers(container, name):
-    cmd='/usr/bin/sudo /usr/bin/docker run -itd --rm --network=none --privileged --name {} {}'
+    cmd='/usr/bin/sudo /usr/bin/docker run -itd --rm --name {} {}'
     cmd=cmd.format(name, container)
     subprocess.check_call(shlex.split(cmd))
 
 def connect_container_dummy(container_name):
-    cmd='/usr/bin/sudo docker network connect network2 {}'
+    cmd='/usr/bin/sudo /usr/bin/docker network connect network2 {}'
     cmd=cmd.format(container_name)
     subprocess.check_call(shlex.split(cmd))
 

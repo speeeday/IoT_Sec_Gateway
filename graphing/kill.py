@@ -23,9 +23,7 @@ def main():
     #name_list=['test{}'.format(i) for i in range(args.number)]
     for i in range(args.number):
         name='test{}'.format(i)
-        docker_delport(name)
         docker_killall(name)
-    cleanup_switch()
 
 if __name__=='__main__':
     main()
