@@ -41,7 +41,7 @@ def parse_entry(r):
         elif a[0] == 'i':
             d['file\'s inode number'] = int(a[1:])
         elif a[0] == 'k':
-            d['link count'] = int(a[1:])
+            d['link count'] = str(a[1:])
         elif a[0] == 'n':
             d['file name, comment, Internet address'] = str(a[1:])
         elif a[0] == 'G':
@@ -71,6 +71,92 @@ def parse_entry(r):
             sys.exit()
     return d
 
+def parse_meminfo_entry(r):
+    d = {}
+    # get each attribute
+    attrs = r.strip('\n').split('\n')
+    for a in attrs:
+        if ':' not in a:
+            continue
+        aa = a.split(':')
+        d[aa[0]] = aa[1].strip(' ')
+    return d
+        
+def get_meminfo_b(a):
+    ms = []
+    for d in a:
+#        print d
+        memtotal = 0
+        memfree = 0
+        swaptotal = 0
+        swapfree = 0
+        if d == {}:
+            continue
+        if d['MemTotal'][-2:] == 'kB':
+            memtotal = int(d['MemTotal'][:-3])
+        else:
+            print "PROBLEM"
+            sys.exit()
+        if d['MemFree'][-2:] == 'kB':
+            memfree = int(d['MemFree'][:-3])
+        else:
+            print "PROBLEM"
+            sys.exit()
+        if d['SwapTotal'][-2:] == 'kB':
+            swaptotal = int(d['SwapTotal'][:-3])
+        else:
+            print "PROBLEM"
+            sys.exit()
+        if d['SwapFree'][-2:] == 'kB':
+            swapfree = int(d['SwapFree'][:-3])
+        else:
+            print "PROBLEM"
+            sys.exit()
+        print memtotal, memfree, swaptotal, swapfree
+        ms.append(swaptotal + memtotal - memfree - swapfree)
+    return ms
+
+def get_mem_b(os):
+    ms = []
+    for ds in os:
+        m = 0
+        for d in ds:
+            if 'file\'s size' in d:
+                m += d['file\'s size']
+        ms.append(m)
+    return ms
+
+def get_mem_kb(os):
+    ms = []
+    for ds in os:
+        m = 0
+        for d in ds:
+            if 'file\'s size' in d:
+                m += d['file\'s size']
+        ms.append(m / (1 << 10))
+    return ms
+
+def get_mem_mb(os):
+    ms = []
+    for ds in os:
+        m = 0
+        for d in ds:
+            if 'file\'s size' in d:
+                m += d['file\'s size']
+        ms.append(m / (1 << 20))
+    return ms
+
+def get_mem_gb(os):
+    ms = []
+    for ds in os:
+        m = 0
+        for d in ds:
+            if 'file\'s size' in d:
+                m += d['file\'s size']
+        ms.append(m / (1 << 30))
+    return ms
+
+
 if __name__ == "__main__":
 
 
@@ -78,37 +164,68 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("file", type=str, help="Input file")
     parser.add_argument("-o", "--out", type=str, default="mountain.png", help="Output file")
+    #parser.add_argument('--instances', '-n', required=True, type=int)
+
     args = parser.parse_args()
 
     output = open(args.file, 'r').read()
-
+    x = []
+    y = []
+    '''
     # split lsof output at each timestep
     times_output = output.strip('\nm\x00\n').split('\nm\x00\n')
-    
+    parsed_output = []
     
     for t in range(0, len(times_output)):
         curr_entries = times_output[t].strip('\n').split('\n')
         parsed_entries = []
-        if t != 0 and len(curr_entries) != prev:
-            print "Differed by %d, Prev: %d, Curr %d" % ((len(curr_entries)-prev), prev, len(curr_entries))
-            #sys.exit()
-        prev = len(curr_entries)
         for i in range(0, len(curr_entries)):
             raw_entry = curr_entries[i]
             parsed_entry = parse_entry(raw_entry)
             parsed_entries.append(parsed_entry)
+        parsed_output.append(parsed_entries)
+    # do some kind of processing on the entries, to get x,y's
+    '''
+    # split lsof output at each timestep
+    times_output = output.strip('==========').split('==========')
+    parsed_output = []
+    
+    for t in range(0, len(times_output)):
+        curr_entry = times_output[t]
+        parsed_entry = parse_meminfo_entry(curr_entry)
+        parsed_output.append(parsed_entry)
 
     # do some kind of processing on the entries, to get x,y's
 
-            
+    instances = 4
+    
+    x = range(instances+1)
+    # skip first 2 parsed entries, were for stabilizing
+    #y = get_mem_b(parsed_output[2:])
+    y = get_meminfo_b(parsed_output[2:])
+
+    
     # process data into x,y: attributes to graph
     # x, y, z = numpy.loadtxt(args.file, unpack=True)
-            
+
+    print len(x)
+    print len(y)
+
+    plt.plot(x, y)
+    plt.plot(x, y, 'bo')
+    
+    plt.xlabel('# Snort Instances')
+    plt.ylabel('Memory (Kilobytes)')
+
+    plt.savefig('instances%d_vs_memory.png' % instances)
+
+    
     sys.exit()
+
 
     
     
-    
+    '''
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
@@ -120,5 +237,5 @@ if __name__ == "__main__":
 
     ax.plot_trisurf(x, y, z, cmap=cm.Blues_r)
     plt.savefig(args.out)
-
+'''
     
