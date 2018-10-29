@@ -8,23 +8,21 @@ SERVER_SIDE_IP=10.1.1.1
 
 update() {
     echo "Updating apt-get..."
-    sudo apt-get -qq update
+    sudo apt-get update
     echo "Update complete"
 }
 
 install_docker() {
     echo "Installing Docker..."
-    sudo apt-get -yqq install docker-compose 
+    sudo apt-get install docker-compose 
 
-    sudo apt-get -yqq install apt-transport-https ca-certificates \
+    sudo apt-get install apt-transport-https ca-certificates \
 	 curl software-properties-common
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
 	| sudo apt-key add -
 
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
-    sudo apt-get -qq update
+    sudo apt-get update
     sudo apt-get -yqq install docker-ce
 
     sudo systemctl start docker
@@ -41,14 +39,14 @@ build_docker_containers(){
 
 install_python_packages() {
     echo "Installing Python..."
-    sudo apt-get -yqq install python python-ipaddress python-subprocess32 \
+    sudo apt-get install python python-ipaddress python-subprocess32 \
 	 python-pip
     echo "Python Install Complete"
 }
 
 install_ovs() {
     echo "Installing OVS..."
-    sudo apt-get -yqq install openvswitch-common openvswitch-switch \
+    sudo apt-get install openvswitch-common openvswitch-switch \
 	 openvswitch-dbg
     sudo systemctl start openvswitch-switch
     sudo systemctl enable openvswitch-switch
@@ -96,12 +94,13 @@ setup_bridge() {
 
 # Install packages
 echo "Beginning Dataplane Setup..."
-#update
-#install_docker
-#install_ovs
-#install_python_packages
+update
+install_docker
+install_ovs
+install_python_packages
+build_docker_containers
 
 # Setup
 #disable_gro
-setup_bridge
+#setup_bridge
 echo "Dataplane Ready"

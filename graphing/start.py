@@ -34,29 +34,51 @@ def main():
     name_list = get_names(args.instances)
 
     # interval in seconds
-    interval = 30
+    interval = 10
     # delta here to avoid mismeasurement errors
     delta = 4
+
+    os.system('sudo cat /proc/meminfo >> %s' % args.outfile)
+    os.system('sudo echo "==========" >> %s' % args.outfile)
+
+    os.system('sudo free >> %s' % (args.outfile + '-free'))
+    os.system('sudo echo "==========" >> %s' % (args.outfile + '-free'))
+
+    
+    
+    time.sleep(interval/2)
     
     # start the lsof cmd in the background
 #    cmd='/usr/bin/sudo /usr/bin/lsof -r {} -F 0 > {} &'
-    cmd = '/usr/bin/sudo python dump_meminfo.py {} {} &'
-    cmd=cmd.format(interval, args.outfile)
-    os.system(cmd);
+    #cmd = '/usr/bin/sudo python dump_meminfo.py {} {} &'
+    #cmd=cmd.format(interval, args.outfile)
+    #os.system(cmd);
 
     start_time = int(time.time())
 
     # start at (i+2) so that we can get one controlled measurement
 
     for i in range(0, len(name_list)):
-        while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
-            time.sleep(2)
+        #while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
+        #    time.sleep(2)
         start_containers(args.container, name_list[i])
         connect_container_dummy(name_list[i])
 
-    # wait to get the last stats
-    while int(time.time()) <= ((start_time + (len(name_list)+2)*interval) + delta):
-        time.sleep(2)
+        time.sleep(interval)
+        
+        os.system('sudo cat /proc/meminfo >> %s' % args.outfile)
+        os.system('sudo echo "==========" >> %s' % args.outfile)
+
+        os.system('sudo free >> %s' % (args.outfile + '-free'))
+        os.system('sudo echo "==========" >> %s' % (args.outfile + '-free'))
+
+        
+        time.sleep(interval/2)
+
+    
+        # wait to get the last stats
+    #while int(time.time()) <= ((start_time + (len(name_list)+2)*interval) + delta):
+    #    time.sleep(2)
 
     #cmd='/usr/bin/sudo /usr/bin/killall lsof'
     #subprocess.call(shlex.split(cmd))
