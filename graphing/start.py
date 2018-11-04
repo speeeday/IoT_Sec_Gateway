@@ -38,12 +38,14 @@ def main():
     # delta here to avoid mismeasurement errors
     delta = 4
 
-    os.system('sudo cat /proc/meminfo >> %s' % args.outfile)
-    os.system('sudo echo "==========" >> %s' % args.outfile)
+    os.system('sudo cat /proc/meminfo >> %s' % (args.outfile + '-meminfo'))
+    os.system('sudo echo "==========" >> %s' % (args.outfile + '-meminfo'))
 
     os.system('sudo free >> %s' % (args.outfile + '-free'))
     os.system('sudo echo "==========" >> %s' % (args.outfile + '-free'))
 
+    os.system('sudo echo %d >> %s' % (0, (args.outfile + '-time')))
+    os.system('sudo echo "==========" >> %s' % (args.outfile + '-time'))
     
     
     time.sleep(interval/2)
@@ -61,17 +63,23 @@ def main():
     for i in range(0, len(name_list)):
         #while int(time.time()) <= ((start_time + (i+2)*interval) + delta):
         #    time.sleep(2)
+
+        start_time = time.time()
+        
         start_containers(args.container, name_list[i])
         connect_container_dummy(name_list[i])
 
+        end_time = time.time()
         time.sleep(interval)
         
-        os.system('sudo cat /proc/meminfo >> %s' % args.outfile)
-        os.system('sudo echo "==========" >> %s' % args.outfile)
+        os.system('sudo cat /proc/meminfo >> %s' % (args.outfile + '-meminfo'))
+        os.system('sudo echo "==========" >> %s' % (args.outfile + '-meminfo'))
 
         os.system('sudo free >> %s' % (args.outfile + '-free'))
         os.system('sudo echo "==========" >> %s' % (args.outfile + '-free'))
 
+        os.system('sudo echo %d >> %s' % ((end_time - start_time), (args.outfile + '-time')))
+        os.system('sudo echo "==========" >> %s' % (args.outfile + '-time'))
         
         time.sleep(interval/2)
 
