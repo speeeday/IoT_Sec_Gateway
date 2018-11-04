@@ -8,21 +8,21 @@ SERVER_SIDE_IP=10.1.1.1
 
 update() {
     echo "Updating apt-get..."
-    sudo apt-get update
+    sudo apt-get -y update
     echo "Update complete"
 }
 
 install_docker() {
     echo "Installing Docker..."
-    sudo apt-get install docker-compose 
+    sudo apt-get -y install docker-compose 
 
-    sudo apt-get install apt-transport-https ca-certificates \
+    sudo apt-get -y install apt-transport-https ca-certificates \
 	 curl software-properties-common
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg \
 	| sudo apt-key add -
 
-    sudo apt-get update
+    sudo apt-get -y update
     sudo apt-get -yqq install docker-ce
 
     sudo systemctl start docker
@@ -32,21 +32,20 @@ install_docker() {
 
 build_docker_containers(){
     echo "Building Snort ICMP Packet Warning Container"
-    sudo docker build -t="snort_icmp_alert" docker_containers/snort_icmp_alert
     sudo docker build -t="snort_icmp_block" docker_containers/snort_icmp_block
     echo "Docker containers built"
 }
 
 install_python_packages() {
     echo "Installing Python..."
-    sudo apt-get install python python-ipaddress python-subprocess32 \
+    sudo apt-get -y install python python-ipaddress python-subprocess32 \
 	 python-pip
     echo "Python Install Complete"
 }
 
 install_ovs() {
     echo "Installing OVS..."
-    sudo apt-get install openvswitch-common openvswitch-switch \
+    sudo apt-get -y install openvswitch-common openvswitch-switch \
 	 openvswitch-dbg
     sudo systemctl start openvswitch-switch
     sudo systemctl enable openvswitch-switch

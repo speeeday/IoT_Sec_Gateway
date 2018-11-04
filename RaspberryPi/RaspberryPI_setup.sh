@@ -10,8 +10,8 @@
 
 # Step 1 - Get latest software
 if [ $1 == 1 ]; then
-    sudo apt-get update
-    sudo apt-get dist-upgrade
+    sudo apt-get -y update
+    sudo apt-get -y dist-upgrade
     sudo reboot
 fi
 
@@ -23,8 +23,8 @@ fi
 
 # Step 3 - Install standard packages & enable SSH
 if [ $1 == 3 ]; then
-    sudo apt-get update
-    sudo apt-get install python python-dev python-pip emacs vim \
+    sudo apt-get -y update
+    sudo apt-get -y install python python-dev python-pip emacs vim \
 	 iperf3 nmap python-ipaddress python-subprocess32 \
 	 apt-transport-https ca-certificates \
 	 docker openvswitch-common openvswitch-switch openvswitch-dbg \
