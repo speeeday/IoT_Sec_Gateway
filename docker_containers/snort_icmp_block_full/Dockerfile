@@ -60,9 +60,9 @@ RUN ln -s /opt/snort/bin/snort /usr/sbin/snort
 # Create Configuration & Log folders
 RUN mkdir -p /etc/snort/ && mkdir -p /etc/snort/rules/ &&  \
     mkdir -p /var/log/snort/ && touch /etc/snort/snort.conf && \
-    touch /etc/snort/rules/local.rules && touch /var/log/snort/alert
+    touch /etc/snort/rules/local.rules && touch /var/log/snort/alert && \
+    mkdir -p /usr/local/lib/snort_dynamicrules
 
-COPY snort.conf /etc/snort/snort.conf 
 COPY local.rules /etc/snort/rules/local.rules 
 COPY run.sh run.sh
 
