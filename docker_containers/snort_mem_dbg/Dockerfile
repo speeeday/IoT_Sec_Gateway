@@ -13,7 +13,7 @@ RUN apt-get update && \
 			 python
 
 # Optional packages
-RUN apt-get install -yqq cpputest libsqlite3-dev uuid-dev 
+RUN apt-get install -yqq cpputest libsqlite3-dev uuid-dev htop net-tools 
 
 RUN mkdir -p ~/snort_src && \
     cd ~/snort_src
@@ -60,13 +60,16 @@ RUN ln -s /opt/snort/bin/snort /usr/sbin/snort
 # Create Configuration & Log folders
 RUN mkdir -p /etc/snort/ && mkdir -p /etc/snort/rules/ &&  \
     mkdir -p /var/log/snort/ && touch /etc/snort/snort.conf && \
-    touch /etc/snort/rules/local.rules && touch /var/log/snort/alert
+    touch /etc/snort/rules/local.rules && touch /var/log/snort/alert && \
+    mkdir -p /usr/local/lib/snort_dynamicrules
 
-COPY snort.conf /etc/snort/snort.conf 
+RUN apt-get update && \
+    apt-get install -yqq psmisc
+
 COPY local.rules /etc/snort/rules/local.rules 
 COPY run.sh run.sh
 
-CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb=10", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
+CMD ["-Q", "--daq", "afpacket", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
 
 ENTRYPOINT ["/run.sh"]
 #ENTRYPOINT ["/idle.sh"]

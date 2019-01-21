@@ -42,3 +42,31 @@ Swap:       1048572      221088      827484
 Mem:         949448      902948       22672         816       23828        7224
 Swap:       1048572      240008      808564
 ==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448       77796      562404        6400      309248      809808
+Swap:       1048572           0     1048572
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      231660      395528        6460      322260      655680
+Swap:       1048572           0     1048572
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      391576      222332        6520      335540      495392
+Swap:       1048572           0     1048572
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      555256       29856        6580      364336      331072
+Swap:       1048572           0     1048572
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      711332       28956        5336      209160      177128
+Swap:       1048572        1792     1046780
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      866904       24448        1736       58096       25692
+Swap:       1048572       15360     1033212
+==========
+              total        used        free      shared  buff/cache   available
+Mem:         949448      882780       29632        1044       37036       20536
+Swap:       1048572      148736      899836
+==========
