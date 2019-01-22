@@ -13,7 +13,7 @@ def rebuild_container(size):
     # replace line 69 in Dockerfile
     # CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb={}", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
     linenum = 69
-    base_cmd = '/bin/sed \'{}s/.*/CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb={}", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]\' snort_daq_buf_test/Dockerfile'
+    base_cmd = '/bin/sed \'{}s#.*#CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb={}", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]#\' snort_daq_buf_test/Dockerfile'
     cmd=base_cmd.format(linenum, size)
     subprocess.check_call(shlex.split(cmd))
 
