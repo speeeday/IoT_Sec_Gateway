@@ -97,7 +97,7 @@ def main():
 
         kill_container(cname)
 
-        time.sleep(interval/2)
+        time.sleep(interval)
 
 
     cmd='/usr/bin/sudo /usr/bin/killall python'
