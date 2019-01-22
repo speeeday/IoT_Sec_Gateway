@@ -36,7 +36,7 @@ def connect_container_dummy(container_name):
     subprocess.check_call(shlex.split(cmd))
 
 def kill_container(container_name):
-    cmd='/usr/bin/sudo /usr/bin/docker kill {}'
+    cmd='/usr/bin/sudo /usr/bin/docker stop {}'
     cmd=cmd.format(container_name)
     subprocess.call(shlex.split(cmd))
     
@@ -51,7 +51,7 @@ def main():
     args=parser.parse_args()
 
     # daq buffer sizes to try
-    size_list = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 40, 80, 128] #128 is default
+    size_list = [1, 2, 4, 6, 8, 12, 16, 24, 32, 48, 64, 96, 128] #128 is default
 
     # interval in seconds
     interval = 10
@@ -63,6 +63,10 @@ def main():
 
     for i in range(0, len(size_list)):
 
+        os.system('sync; echo 3 > /proc/sys/vm/drop_caches')
+        
+        time.sleep(interval/3)
+        
         os.system('sudo cat /proc/meminfo >> %s' % (args.outfile + '-meminfo'))
         os.system('sudo echo "==========" >> %s' % (args.outfile + '-meminfo'))
         
