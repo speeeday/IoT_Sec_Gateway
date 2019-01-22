@@ -204,38 +204,26 @@ if __name__ == "__main__":
     #y = get_mem_b(parsed_output[2:])
     y = get_meminfo_b(parsed_output[2:])
 
+
+    print "# Instances - " + str(instances)
+    for yy in y:
+        print yy
     
     # process data into x,y: attributes to graph
     # x, y, z = numpy.loadtxt(args.file, unpack=True)
 
-    print len(x)
-    print len(y)
+    #print len(x)
+    #print len(y)
 
-    plt.plot(x, y)
-    plt.plot(x, y, 'bo')
+    #plt.plot(x, y)
+    #plt.plot(x, y, 'bo')
     
-    plt.xlabel('# Snort Instances')
-    plt.ylabel('Memory (Kilobytes)')
+    #plt.xlabel('# Snort Instances')
+    #plt.ylabel('Memory (Kilobytes)')
 
-    plt.savefig('instances%d_vs_memory.png' % instances)
-
-    
-    sys.exit()
-
+    #plt.savefig('instances%d_vs_memory.png' % instances)
 
     
-    
-    '''
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
+    #sys.exit()
 
-    ax.invert_yaxis();
-    ax.set_xlabel("Stride")
-    ax.set_ylabel("log2(size) (Bytes)")
-    ax.set_zlabel("MB/s")
-    plt.tight_layout()
-
-    ax.plot_trisurf(x, y, z, cmap=cm.Blues_r)
-    plt.savefig(args.out)
-'''
     
