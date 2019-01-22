@@ -9,12 +9,23 @@ import os
 
 cname = 'test1'
 
-def build_container(path, container):
-#    sudo docker build -t="snort_icmp_block" /home/sj/research-projects/scalable-dataplane/IoT_Sec_Gateway/docker_containers/snort_icmp_block/
+def rebuild_container(size):
+    # replace line 69 in Dockerfile
+    # CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb={}", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
+    linenum = 69
+    base_cmd = '/bin/sed \'{}s/.*/CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb={}", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]/\' snort_daq_buf_test/Dockerfile/'
+    cmd=base_cmd.format(linenum, size)
+    subprocess.check_call(shlex.split(cmd))
 
-def start_containers(container, name):
+#    sudo docker build -t="snort_icmp_block" /home/sj/research-projects/scalable-dataplane/IoT_Sec_Gateway/docker_containers/snort_icmp_block/
+    cmd='/usr/bin/sudo /usr/bin/docker build -t="snort_daq_buf_test" snort_daq_buf_test/'
+    subprocess.check_call(shlex.split(cmd))
+    
+    
+
+def start_container(name):
     cmd='/usr/bin/sudo /usr/bin/docker run -itd --rm --name {} {}'
-    cmd=cmd.format(name, container)
+    cmd=cmd.format(name, 'snort_daq_buf_test')
     subprocess.check_call(shlex.split(cmd))
 
 def connect_container_dummy(container_name):
@@ -34,14 +45,11 @@ def get_names(number):
 
 def main():
     parser=argparse.ArgumentParser(description='Connect container to vswitch')
-    parser.add_argument('--container', '-C', required=True, type=str)
     parser.add_argument('--outfile', '-o', required=True, type=str)
-    parser.add_argument('--instances', '-n', required=True, type=int)
     args=parser.parse_args()
-    name_list = []
-    client_ips = []
-    server_ips = []
-    name_list = get_names(args.instances)
+
+    # daq buffer sizes to try
+    size_list = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 40, 80, 128] #128 is default
 
     # interval in seconds
     interval = 10
@@ -51,7 +59,7 @@ def main():
 
     # start at (i+2) so that we can get one controlled measurement
 
-    for i in range(0, len(name_list)):
+    for i in range(0, len(size_list)):
 
         os.system('sudo cat /proc/meminfo >> %s' % (args.outfile + '-meminfo'))
         os.system('sudo echo "==========" >> %s' % (args.outfile + '-meminfo'))
@@ -63,13 +71,14 @@ def main():
         os.system('sudo echo "==========" >> %s' % (args.outfile + '-time'))
         
     
-        time.sleep(interval/2)
+        time.sleep(interval/4)
         
         start_time = int(time.time())
-        
-        start_containers(args.container, name_list[i])
-        connect_container_dummy(name_list[i])
 
+        rebuild_container(size_list[i])
+        start_container(cname)
+        connect_container_dummy(cname)
+        
         end_time = time.time()
         time.sleep(interval)
         
@@ -82,7 +91,12 @@ def main():
         os.system('sudo echo %d >> %s' % ((end_time - start_time), (args.outfile + '-time')))
         os.system('sudo echo "==========" >> %s' % (args.outfile + '-time'))
         
+        time.sleep(interval/4)
+
+        kill_container(cname)
+
         time.sleep(interval/2)
+
 
     cmd='/usr/bin/sudo /usr/bin/killall python'
     subprocess.call(shlex.split(cmd))
