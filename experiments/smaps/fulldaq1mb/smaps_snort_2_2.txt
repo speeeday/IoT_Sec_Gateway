@@ -2,13 +2,13 @@
 Size:               1024 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 960 kB
-Pss:                 480 kB
-Shared_Clean:        960 kB
+Rss:                 948 kB
+Pss:                 474 kB
+Shared_Clean:        948 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:          960 kB
+Referenced:          948 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -65,14 +65,14 @@ VmFlags: rd wr mr mw me dw ac
 Size:              13352 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                8820 kB
-Pss:                8820 kB
+Rss:                8772 kB
+Pss:                8772 kB
 Shared_Clean:          0 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
-Private_Dirty:      8820 kB
-Referenced:         8820 kB
-Anonymous:          8820 kB
+Private_Dirty:      8772 kB
+Referenced:         8772 kB
+Anonymous:          8772 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
 ShmemPmdMapped:        0 kB
@@ -82,18 +82,18 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-02a28000-03bba000 rw-p 00000000 00:00 0          [heap]
-Size:              17992 kB
+01b5a000-13f72000 rw-p 00000000 00:00 0          [heap]
+Size:             299104 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:               17788 kB
-Pss:               17788 kB
+Rss:              298956 kB
+Pss:              298956 kB
 Shared_Clean:          0 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
-Private_Dirty:     17788 kB
-Referenced:        17788 kB
-Anonymous:         17788 kB
+Private_Dirty:    298956 kB
+Referenced:       298956 kB
+Anonymous:        298956 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
 ShmemPmdMapped:        0 kB
@@ -103,81 +103,18 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-747a9000-74829000 rw-s 00000000 00:08 91499      socket:[91499]
-Size:                512 kB
+753a9000-753f6000 rw-p 00000000 00:00 0 
+Size:                308 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 512 kB
-Pss:                 512 kB
+Rss:                 256 kB
+Pss:                 256 kB
 Shared_Clean:          0 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
-Private_Dirty:       512 kB
-Referenced:          512 kB
-Anonymous:             0 kB
-LazyFree:              0 kB
-AnonHugePages:         0 kB
-ShmemPmdMapped:        0 kB
-Shared_Hugetlb:        0 kB
-Private_Hugetlb:       0 kB
-Swap:                  0 kB
-SwapPss:               0 kB
-Locked:                0 kB
-VmFlags: rd wr sh mr mw me ms mm 
-74829000-748a9000 rw-s 00000000 00:08 91500      socket:[91500]
-Size:                512 kB
-KernelPageSize:        4 kB
-MMUPageSize:           4 kB
-Rss:                 512 kB
-Pss:                 512 kB
-Shared_Clean:          0 kB
-Shared_Dirty:          0 kB
-Private_Clean:         0 kB
-Private_Dirty:       512 kB
-Referenced:          512 kB
-Anonymous:             0 kB
-LazyFree:              0 kB
-AnonHugePages:         0 kB
-ShmemPmdMapped:        0 kB
-Shared_Hugetlb:        0 kB
-Private_Hugetlb:       0 kB
-Swap:                  0 kB
-SwapPss:               0 kB
-Locked:                0 kB
-VmFlags: rd wr sh mr mw me ms mm 
-748a9000-748aa000 ---p 00000000 00:00 0 
-Size:                  4 kB
-KernelPageSize:        4 kB
-MMUPageSize:           4 kB
-Rss:                   0 kB
-Pss:                   0 kB
-Shared_Clean:          0 kB
-Shared_Dirty:          0 kB
-Private_Clean:         0 kB
-Private_Dirty:         0 kB
-Referenced:            0 kB
-Anonymous:             0 kB
-LazyFree:              0 kB
-AnonHugePages:         0 kB
-ShmemPmdMapped:        0 kB
-Shared_Hugetlb:        0 kB
-Private_Hugetlb:       0 kB
-Swap:                  0 kB
-SwapPss:               0 kB
-Locked:                0 kB
-VmFlags: mr mw me ac 
-748aa000-75a5e000 rw-p 00000000 00:00 0 
-Size:              18128 kB
-KernelPageSize:        4 kB
-MMUPageSize:           4 kB
-Rss:                6036 kB
-Pss:                6036 kB
-Shared_Clean:          0 kB
-Shared_Dirty:          0 kB
-Private_Clean:         0 kB
-Private_Dirty:      6036 kB
-Referenced:         6036 kB
-Anonymous:          6036 kB
+Private_Dirty:       256 kB
+Referenced:          256 kB
+Anonymous:           256 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
 ShmemPmdMapped:        0 kB
@@ -187,7 +124,28 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75a5e000-75a68000 r-xp 00000000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
+75443000-759f4000 rw-p 00000000 00:00 0 
+Size:               5828 kB
+KernelPageSize:        4 kB
+MMUPageSize:           4 kB
+Rss:                5760 kB
+Pss:                5760 kB
+Shared_Clean:          0 kB
+Shared_Dirty:          0 kB
+Private_Clean:         0 kB
+Private_Dirty:      5760 kB
+Referenced:         5760 kB
+Anonymous:          5760 kB
+LazyFree:              0 kB
+AnonHugePages:         0 kB
+ShmemPmdMapped:        0 kB
+Shared_Hugetlb:        0 kB
+Private_Hugetlb:       0 kB
+Swap:                  0 kB
+SwapPss:               0 kB
+Locked:                0 kB
+VmFlags: rd wr mr mw me ac 
+759f4000-759fe000 r-xp 00000000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
 Size:                 40 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -208,7 +166,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75a68000-75a77000 ---p 0000a000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
+759fe000-75a0d000 ---p 0000a000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -229,7 +187,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75a77000-75a78000 r--p 00009000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
+75a0d000-75a0e000 r--p 00009000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -250,7 +208,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75a78000-75a79000 rw-p 0000a000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
+75a0e000-75a0f000 rw-p 0000a000 b3:07 1712261    /usr/local/lib/snort_dynamicpreprocessor/libsf_dnp3_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -271,7 +229,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75a79000-75a7c000 r-xp 00000000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
+75a0f000-75a12000 r-xp 00000000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -292,7 +250,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75a7c000-75a8b000 ---p 00003000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
+75a12000-75a21000 ---p 00003000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -313,7 +271,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75a8b000-75a8c000 r--p 00002000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
+75a21000-75a22000 r--p 00002000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -334,7 +292,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75a8c000-75a8d000 rw-p 00003000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
+75a22000-75a23000 rw-p 00003000 b3:07 1712266    /usr/local/lib/snort_dynamicpreprocessor/libsf_dns_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -355,7 +313,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75a8d000-75a91000 r-xp 00000000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
+75a23000-75a27000 r-xp 00000000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
 Size:                 16 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -376,7 +334,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75a91000-75aa0000 ---p 00004000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
+75a27000-75a36000 ---p 00004000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -397,7 +355,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75aa0000-75aa1000 r--p 00003000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
+75a36000-75a37000 r--p 00003000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -418,7 +376,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75aa1000-75aa2000 rw-p 00004000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
+75a37000-75a38000 rw-p 00004000 b3:07 1712321    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssl_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -439,7 +397,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75aa2000-75aa9000 r-xp 00000000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
+75a38000-75a3f000 r-xp 00000000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
 Size:                 28 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -460,7 +418,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75aa9000-75ab8000 ---p 00007000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
+75a3f000-75a4e000 ---p 00007000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -481,7 +439,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75ab8000-75ab9000 r--p 00006000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
+75a4e000-75a4f000 r--p 00006000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -502,7 +460,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75ab9000-75aba000 rw-p 00007000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
+75a4f000-75a50000 rw-p 00007000 b3:07 1712296    /usr/local/lib/snort_dynamicpreprocessor/libsf_reputation_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -523,7 +481,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75aba000-75ac2000 r-xp 00000000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
+75a50000-75a58000 r-xp 00000000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
 Size:                 32 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -544,7 +502,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75ac2000-75ad1000 ---p 00008000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
+75a58000-75a67000 ---p 00008000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -565,7 +523,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75ad1000-75ad2000 r--p 00007000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
+75a67000-75a68000 r--p 00007000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -586,7 +544,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75ad2000-75ad3000 rw-p 00008000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
+75a68000-75a69000 rw-p 00008000 b3:07 1712281    /usr/local/lib/snort_dynamicpreprocessor/libsf_imap_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -607,7 +565,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75ad3000-75adb000 r-xp 00000000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
+75a69000-75a71000 r-xp 00000000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
 Size:                 32 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -628,7 +586,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75adb000-75aea000 ---p 00008000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
+75a71000-75a80000 ---p 00008000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -649,7 +607,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75aea000-75aeb000 r--p 00007000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
+75a80000-75a81000 r--p 00007000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -670,7 +628,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75aeb000-75aec000 rw-p 00008000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
+75a81000-75a82000 rw-p 00008000 b3:07 1712291    /usr/local/lib/snort_dynamicpreprocessor/libsf_pop_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -691,7 +649,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75aec000-75af1000 r-xp 00000000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
+75a82000-75a87000 r-xp 00000000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
 Size:                 20 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -712,7 +670,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75af1000-75b01000 ---p 00005000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
+75a87000-75a97000 ---p 00005000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -733,7 +691,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75b01000-75b02000 r--p 00005000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
+75a97000-75a98000 r--p 00005000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -754,7 +712,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75b02000-75b04000 rw-p 00006000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
+75a98000-75a9a000 rw-p 00006000 b3:07 1712276    /usr/local/lib/snort_dynamicpreprocessor/libsf_gtp_preproc.so.0.0.0
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -775,7 +733,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75b04000-75b07000 rw-p 00000000 00:00 0 
+75a9a000-75a9d000 rw-p 00000000 00:00 0 
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -796,7 +754,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75b07000-75b17000 r-xp 00000000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
+75a9d000-75aad000 r-xp 00000000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -817,7 +775,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75b17000-75b27000 ---p 00010000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
+75aad000-75abd000 ---p 00010000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -838,7 +796,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75b27000-75b28000 r--p 00010000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
+75abd000-75abe000 r--p 00010000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -859,7 +817,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75b28000-75b29000 rw-p 00011000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
+75abe000-75abf000 rw-p 00011000 b3:07 1712271    /usr/local/lib/snort_dynamicpreprocessor/libsf_ftptelnet_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -880,7 +838,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75b29000-75b2c000 r-xp 00000000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
+75abf000-75ac2000 r-xp 00000000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -901,7 +859,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75b2c000-75b3b000 ---p 00003000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
+75ac2000-75ad1000 ---p 00003000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -922,7 +880,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75b3b000-75b3c000 r--p 00002000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
+75ad1000-75ad2000 r--p 00002000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -943,7 +901,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75b3c000-75b3d000 rw-p 00003000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
+75ad2000-75ad3000 rw-p 00003000 b3:07 1712286    /usr/local/lib/snort_dynamicpreprocessor/libsf_modbus_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -964,7 +922,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75b3d000-75b55000 r-xp 00000000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
+75ad3000-75aeb000 r-xp 00000000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
 Size:                 96 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -985,7 +943,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75b55000-75b64000 ---p 00018000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
+75aeb000-75afa000 ---p 00018000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1006,7 +964,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75b64000-75b65000 rw-p 00017000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
+75afa000-75afb000 rw-p 00017000 b3:07 1577112    /lib/arm-linux-gnueabihf/libgcc_s.so.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1027,7 +985,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75b65000-75ba8000 r-xp 00000000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
+75afb000-75b3e000 r-xp 00000000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
 Size:                268 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1048,7 +1006,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75ba8000-75bb8000 ---p 00043000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
+75b3e000-75b4e000 ---p 00043000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1069,7 +1027,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75bb8000-75bb9000 r--p 00043000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
+75b4e000-75b4f000 r--p 00043000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1090,7 +1048,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75bb9000-75bba000 rw-p 00044000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
+75b4f000-75b50000 rw-p 00044000 b3:07 3426       /usr/lib/arm-linux-gnueabihf/libluajit-5.1.so.2.0.4
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1111,17 +1069,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75bba000-75bfe000 r-xp 00000000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
+75b50000-75b94000 r-xp 00000000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
 Size:                272 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 244 kB
-Pss:                 152 kB
-Shared_Clean:        184 kB
+Rss:                 188 kB
+Pss:                 110 kB
+Shared_Clean:        156 kB
 Shared_Dirty:          0 kB
-Private_Clean:        60 kB
+Private_Clean:        32 kB
 Private_Dirty:         0 kB
-Referenced:          244 kB
+Referenced:          188 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -1132,7 +1090,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75bfe000-75c0d000 ---p 00044000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
+75b94000-75ba3000 ---p 00044000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1153,7 +1111,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75c0d000-75c0f000 r--p 00043000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
+75ba3000-75ba5000 r--p 00043000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1174,7 +1132,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75c0f000-75c12000 rw-p 00045000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
+75ba5000-75ba8000 rw-p 00045000 b3:07 1712251    /usr/local/lib/snort_dynamicpreprocessor/libsf_appid_preproc.so.0.0.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1195,7 +1153,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75c12000-75f01000 rw-p 00000000 00:00 0 
+75ba8000-75e97000 rw-p 00000000 00:00 0 
 Size:               3004 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1216,7 +1174,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f01000-75f0d000 r-xp 00000000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
+75e97000-75ea3000 r-xp 00000000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
 Size:                 48 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1237,7 +1195,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75f0d000-75f1c000 ---p 0000c000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
+75ea3000-75eb2000 ---p 0000c000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1258,7 +1216,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75f1c000-75f1d000 r--p 0000b000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
+75eb2000-75eb3000 r--p 0000b000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1279,7 +1237,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75f1d000-75f1e000 rw-p 0000c000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
+75eb3000-75eb4000 rw-p 0000c000 b3:07 1712306    /usr/local/lib/snort_dynamicpreprocessor/libsf_sip_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1300,7 +1258,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f1e000-75f29000 r-xp 00000000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
+75eb4000-75ebf000 r-xp 00000000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
 Size:                 44 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1321,7 +1279,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75f29000-75f39000 ---p 0000b000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
+75ebf000-75ecf000 ---p 0000b000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1342,7 +1300,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75f39000-75f3a000 r--p 0000b000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
+75ecf000-75ed0000 r--p 0000b000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1363,7 +1321,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75f3a000-75f3b000 rw-p 0000c000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
+75ed0000-75ed1000 rw-p 0000c000 b3:07 1712311    /usr/local/lib/snort_dynamicpreprocessor/libsf_smtp_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1384,7 +1342,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f3b000-75f3c000 rw-p 00000000 00:00 0 
+75ed1000-75ed2000 rw-p 00000000 00:00 0 
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1405,7 +1363,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f3c000-75f41000 r-xp 00000000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
+75ed2000-75ed7000 r-xp 00000000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
 Size:                 20 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1426,7 +1384,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75f41000-75f50000 ---p 00005000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
+75ed7000-75ee6000 ---p 00005000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1447,7 +1405,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75f50000-75f51000 r--p 00004000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
+75ee6000-75ee7000 r--p 00004000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1468,7 +1426,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75f51000-75f52000 rw-p 00005000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
+75ee7000-75ee8000 rw-p 00005000 b3:07 1712301    /usr/local/lib/snort_dynamicpreprocessor/libsf_sdf_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1489,7 +1447,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f52000-75f55000 r-xp 00000000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
+75ee8000-75eeb000 r-xp 00000000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1510,7 +1468,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75f55000-75f64000 ---p 00003000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
+75eeb000-75efa000 ---p 00003000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1531,7 +1489,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75f64000-75f65000 r--p 00002000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
+75efa000-75efb000 r--p 00002000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1552,7 +1510,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75f65000-75f66000 rw-p 00003000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
+75efb000-75efc000 rw-p 00003000 b3:07 1712316    /usr/local/lib/snort_dynamicpreprocessor/libsf_ssh_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1573,17 +1531,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75f66000-75f8f000 r-xp 00000000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
+75efc000-75f25000 r-xp 00000000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
 Size:                164 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 164 kB
-Pss:                  82 kB
-Shared_Clean:        164 kB
+Rss:                 148 kB
+Pss:                  76 kB
+Shared_Clean:        144 kB
 Shared_Dirty:          0 kB
-Private_Clean:         0 kB
+Private_Clean:         4 kB
 Private_Dirty:         0 kB
-Referenced:          164 kB
+Referenced:          148 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -1594,7 +1552,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-75f8f000-75f9f000 ---p 00029000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
+75f25000-75f35000 ---p 00029000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1615,7 +1573,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-75f9f000-75fa0000 r--p 00029000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
+75f35000-75f36000 r--p 00029000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1636,7 +1594,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-75fa0000-75fa1000 rw-p 0002a000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
+75f36000-75f37000 rw-p 0002a000 b3:07 1712256    /usr/local/lib/snort_dynamicpreprocessor/libsf_dce2_preproc.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1657,7 +1615,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75fa1000-75ffa000 rw-p 00000000 00:00 0 
+75f37000-75f90000 rw-p 00000000 00:00 0 
 Size:                356 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1678,7 +1636,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-75ffa000-76006000 r-xp 00000000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
+75f90000-75f9c000 r-xp 00000000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
 Size:                 48 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1699,7 +1657,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76006000-76015000 ---p 0000c000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
+75f9c000-75fab000 ---p 0000c000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1720,7 +1678,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76015000-76016000 r--p 0000b000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
+75fab000-75fac000 r--p 0000b000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1741,7 +1699,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76016000-76017000 rw-p 0000c000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
+75fac000-75fad000 rw-p 0000c000 b3:07 1712245    /usr/local/lib/snort_dynamicengine/libsf_engine.so.0.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1762,18 +1720,18 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76017000-76b3d000 rw-p 00000000 00:00 0 
+75fad000-76ad3000 rw-p 00000000 00:00 0 
 Size:              11416 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                5800 kB
-Pss:                5800 kB
+Rss:                5876 kB
+Pss:                5876 kB
 Shared_Clean:          0 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
-Private_Dirty:      5800 kB
-Referenced:         5800 kB
-Anonymous:          5800 kB
+Private_Dirty:      5876 kB
+Referenced:         5876 kB
+Anonymous:          5876 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
 ShmemPmdMapped:        0 kB
@@ -1783,7 +1741,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76b3d000-76b44000 r-xp 00000000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
+76ad3000-76ada000 r-xp 00000000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
 Size:                 28 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1804,7 +1762,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76b44000-76b53000 ---p 00007000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
+76ada000-76ae9000 ---p 00007000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1825,7 +1783,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76b53000-76b54000 r--p 00006000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
+76ae9000-76aea000 r--p 00006000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1846,7 +1804,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76b54000-76b55000 rw-p 00007000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
+76aea000-76aeb000 rw-p 00007000 b3:07 1577138    /lib/arm-linux-gnueabihf/libnss_files-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1867,7 +1825,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76b55000-76b5b000 rw-p 00000000 00:00 0 
+76aeb000-76af1000 rw-p 00000000 00:00 0 
 Size:                 24 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1888,7 +1846,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76b5b000-76b5e000 r-xp 00000000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
+76af1000-76af4000 r-xp 00000000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1909,7 +1867,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76b5e000-76b6d000 ---p 00003000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
+76af4000-76b03000 ---p 00003000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1930,7 +1888,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76b6d000-76b6e000 r--p 00002000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
+76b03000-76b04000 r--p 00002000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1951,7 +1909,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76b6e000-76b6f000 rw-p 00003000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
+76b04000-76b05000 rw-p 00003000 b3:07 880        /lib/arm-linux-gnueabihf/libmnl.so.0.1.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -1972,17 +1930,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76b6f000-76b73000 r-xp 00000000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
+76b05000-76b09000 r-xp 00000000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
 Size:                 16 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  12 kB
-Pss:                   6 kB
-Shared_Clean:         12 kB
+Rss:                  16 kB
+Pss:                   8 kB
+Shared_Clean:         16 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:           12 kB
+Referenced:           16 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -1993,7 +1951,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76b73000-76b7a000 ---p 00004000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
+76b09000-76b10000 ---p 00004000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
 Size:                 28 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2014,7 +1972,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76b7a000-76b7b000 r--p 00003000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
+76b10000-76b11000 r--p 00003000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2035,7 +1993,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76b7b000-76b7c000 rw-p 00004000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
+76b11000-76b12000 rw-p 00004000 b3:07 3445       /usr/lib/arm-linux-gnueabihf/libnfnetlink.so.0.2.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2056,17 +2014,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76b7c000-76c52000 r-xp 00000000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
+76b12000-76be8000 r-xp 00000000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
 Size:                856 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 836 kB
-Pss:                 240 kB
-Shared_Clean:        836 kB
+Rss:                 844 kB
+Pss:                 233 kB
+Shared_Clean:        844 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:          836 kB
+Referenced:          844 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2077,7 +2035,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76c52000-76c62000 ---p 000d6000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
+76be8000-76bf8000 ---p 000d6000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2098,7 +2056,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76c62000-76c64000 r--p 000d6000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
+76bf8000-76bfa000 r--p 000d6000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2119,7 +2077,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76c64000-76c65000 rw-p 000d8000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
+76bfa000-76bfb000 rw-p 000d8000 b3:07 1577091    /lib/arm-linux-gnueabihf/libc-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2140,7 +2098,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76c65000-76c68000 rw-p 00000000 00:00 0 
+76bfb000-76bfe000 rw-p 00000000 00:00 0 
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2161,17 +2119,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76c68000-76c79000 r-xp 00000000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76bfe000-76c0f000 r-xp 00000000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
 Size:                 68 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  64 kB
-Pss:                  32 kB
+Rss:                  68 kB
+Pss:                  36 kB
 Shared_Clean:         64 kB
 Shared_Dirty:          0 kB
-Private_Clean:         0 kB
+Private_Clean:         4 kB
 Private_Dirty:         0 kB
-Referenced:           64 kB
+Referenced:           68 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2182,7 +2140,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76c79000-76c88000 ---p 00011000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c0f000-76c1e000 ---p 00011000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2203,7 +2161,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76c88000-76c89000 r--p 00010000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c1e000-76c1f000 r--p 00010000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2224,7 +2182,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76c89000-76c8a000 rw-p 00011000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
+76c1f000-76c20000 rw-p 00011000 b3:07 1577157    /lib/arm-linux-gnueabihf/libpthread-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2245,7 +2203,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76c8a000-76c8c000 rw-p 00000000 00:00 0 
+76c20000-76c22000 rw-p 00000000 00:00 0 
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2266,17 +2224,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76c8c000-76ca2000 r-xp 00000000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
+76c22000-76c38000 r-xp 00000000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
 Size:                 88 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  60 kB
-Pss:                  30 kB
-Shared_Clean:         60 kB
+Rss:                  64 kB
+Pss:                  32 kB
+Shared_Clean:         64 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:           60 kB
+Referenced:           64 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2287,7 +2245,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76ca2000-76caa000 ---p 00016000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
+76c38000-76c40000 ---p 00016000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
 Size:                 32 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2308,7 +2266,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76caa000-76cab000 r--p 00016000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
+76c40000-76c41000 r--p 00016000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2329,7 +2287,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76cab000-76cac000 rw-p 00017000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
+76c41000-76c42000 rw-p 00017000 b3:07 1577122    /lib/arm-linux-gnueabihf/liblzma.so.5.0.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2350,17 +2308,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76cac000-76cbd000 r-xp 00000000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76c42000-76c53000 r-xp 00000000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
 Size:                 68 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  68 kB
-Pss:                  34 kB
-Shared_Clean:         68 kB
+Rss:                  64 kB
+Pss:                  32 kB
+Shared_Clean:         64 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:           68 kB
+Referenced:           64 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2371,7 +2329,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76cbd000-76ccc000 ---p 00011000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76c53000-76c62000 ---p 00011000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2392,7 +2350,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76ccc000-76ccd000 r--p 00010000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76c62000-76c63000 r--p 00010000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2413,7 +2371,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76ccd000-76cce000 rw-p 00011000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
+76c63000-76c64000 rw-p 00011000 b3:07 1577188    /lib/arm-linux-gnueabihf/libz.so.1.2.8
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2434,7 +2392,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76cce000-76cd5000 r-xp 00000000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
+76c64000-76c6b000 r-xp 00000000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
 Size:                 28 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2455,7 +2413,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76cd5000-76ce5000 ---p 00007000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
+76c6b000-76c7b000 ---p 00007000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2476,7 +2434,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76ce5000-76ce6000 r--p 00007000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
+76c7b000-76c7c000 r--p 00007000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2497,7 +2455,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76ce6000-76ce7000 rw-p 00008000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
+76c7c000-76c7d000 rw-p 00008000 b3:07 3331       /usr/lib/arm-linux-gnueabihf/libdumbnet.so.1.0.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2518,7 +2476,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76ce7000-76ce9000 rw-p 00000000 00:00 0 
+76c7d000-76c7f000 rw-p 00000000 00:00 0 
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2539,17 +2497,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76ce9000-76d14000 r-xp 00000000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
+76c7f000-76caa000 r-xp 00000000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
 Size:                172 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 156 kB
-Pss:                  78 kB
-Shared_Clean:        156 kB
+Rss:                  64 kB
+Pss:                  32 kB
+Shared_Clean:         64 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:          156 kB
+Referenced:           64 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2560,7 +2518,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76d14000-76d24000 ---p 0002b000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
+76caa000-76cba000 ---p 0002b000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
 Size:                 64 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2581,7 +2539,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76d24000-76d25000 r--p 0002b000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
+76cba000-76cbb000 r--p 0002b000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2602,7 +2560,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76d25000-76d26000 rw-p 0002c000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
+76cbb000-76cbc000 rw-p 0002c000 b3:07 3465       /usr/lib/arm-linux-gnueabihf/libpcap.so.1.7.4
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2623,17 +2581,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76d26000-76d40000 r-xp 00000000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
+76cbc000-76cd6000 r-xp 00000000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
 Size:                104 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  60 kB
-Pss:                  30 kB
-Shared_Clean:         60 kB
+Rss:                  64 kB
+Pss:                  32 kB
+Shared_Clean:         64 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:           60 kB
+Referenced:           64 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2644,7 +2602,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76d40000-76d4f000 ---p 0001a000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
+76cd6000-76ce5000 ---p 0001a000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2665,7 +2623,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76d4f000-76d50000 r--p 00019000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
+76ce5000-76ce6000 r--p 00019000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2686,7 +2644,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76d50000-76d51000 rw-p 0001a000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
+76ce6000-76ce7000 rw-p 0001a000 b3:07 1706500    /usr/local/lib/libsfbpf.so.0.0.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2707,7 +2665,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76d51000-76d54000 r-xp 00000000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
+76ce7000-76cea000 r-xp 00000000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2728,7 +2686,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76d54000-76d5c000 ---p 00003000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
+76cea000-76cf2000 ---p 00003000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
 Size:                 32 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2749,7 +2707,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76d5c000-76d5d000 r--p 00003000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
+76cf2000-76cf3000 r--p 00003000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2770,7 +2728,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76d5d000-76d5e000 rw-p 00004000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
+76cf3000-76cf4000 rw-p 00004000 b3:07 3440       /usr/lib/arm-linux-gnueabihf/libnetfilter_queue.so.1.3.0
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2791,7 +2749,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76d5e000-76d60000 r-xp 00000000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
+76cf4000-76cf6000 r-xp 00000000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
 Size:                  8 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2812,7 +2770,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76d60000-76d6f000 ---p 00002000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
+76cf6000-76d05000 ---p 00002000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2833,7 +2791,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76d6f000-76d70000 r--p 00001000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
+76d05000-76d06000 r--p 00001000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2854,7 +2812,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76d70000-76d71000 rw-p 00002000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
+76d06000-76d07000 rw-p 00002000 b3:07 1577104    /lib/arm-linux-gnueabihf/libdl-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2875,17 +2833,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76d71000-76e70000 r-xp 00000000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76d07000-76e06000 r-xp 00000000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
 Size:               1020 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 316 kB
-Pss:                 178 kB
-Shared_Clean:        276 kB
+Rss:                 352 kB
+Pss:                 206 kB
+Shared_Clean:        292 kB
 Shared_Dirty:          0 kB
-Private_Clean:        40 kB
+Private_Clean:        60 kB
 Private_Dirty:         0 kB
-Referenced:          316 kB
+Referenced:          352 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -2896,7 +2854,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76e70000-76e7f000 ---p 000ff000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76e06000-76e15000 ---p 000ff000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2917,7 +2875,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76e7f000-76e8d000 r--p 000fe000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76e15000-76e23000 r--p 000fe000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
 Size:                 56 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2938,7 +2896,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76e8d000-76e94000 rw-p 0010c000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76e23000-76e2a000 rw-p 0010c000 b3:07 865        /lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
 Size:                 28 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2959,7 +2917,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76e94000-76e97000 rw-p 00000000 00:00 0 
+76e2a000-76e2d000 rw-p 00000000 00:00 0 
 Size:                 12 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -2980,17 +2938,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76e97000-76efe000 r-xp 00000000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
+76e2d000-76e94000 r-xp 00000000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
 Size:                412 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                  96 kB
-Pss:                  48 kB
-Shared_Clean:         96 kB
+Rss:                  76 kB
+Pss:                  38 kB
+Shared_Clean:         76 kB
 Shared_Dirty:          0 kB
 Private_Clean:         0 kB
 Private_Dirty:         0 kB
-Referenced:           96 kB
+Referenced:           76 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -3001,7 +2959,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76efe000-76f0d000 ---p 00067000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
+76e94000-76ea3000 ---p 00067000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3022,7 +2980,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76f0d000-76f0e000 r--p 00066000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
+76ea3000-76ea4000 r--p 00066000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3043,7 +3001,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76f0e000-76f0f000 rw-p 00067000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
+76ea4000-76ea5000 rw-p 00067000 b3:07 1577123    /lib/arm-linux-gnueabihf/libm-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3064,17 +3022,17 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76f0f000-76f5b000 r-xp 00000000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
+76ea5000-76ef1000 r-xp 00000000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
 Size:                304 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
-Rss:                 236 kB
-Pss:                 130 kB
-Shared_Clean:        212 kB
+Rss:                 168 kB
+Pss:                 102 kB
+Shared_Clean:        132 kB
 Shared_Dirty:          0 kB
-Private_Clean:        24 kB
+Private_Clean:        36 kB
 Private_Dirty:         0 kB
-Referenced:          236 kB
+Referenced:          168 kB
 Anonymous:             0 kB
 LazyFree:              0 kB
 AnonHugePages:         0 kB
@@ -3085,7 +3043,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76f5b000-76f6a000 ---p 0004c000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
+76ef1000-76f00000 ---p 0004c000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3106,7 +3064,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76f6a000-76f6b000 r--p 0004b000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
+76f00000-76f01000 r--p 0004b000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3127,7 +3085,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76f6b000-76f6c000 rw-p 0004c000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
+76f01000-76f02000 rw-p 0004c000 b3:07 1577154    /lib/arm-linux-gnueabihf/libpcre.so.3.13.2
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3148,7 +3106,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76f6c000-76f81000 r-xp 00000000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
+76f02000-76f17000 r-xp 00000000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
 Size:                 84 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3169,7 +3127,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me 
-76f81000-76f90000 ---p 00015000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
+76f17000-76f26000 ---p 00015000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
 Size:                 60 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3190,7 +3148,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: mr mw me 
-76f90000-76f91000 r--p 00014000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
+76f26000-76f27000 r--p 00014000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3211,7 +3169,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me ac 
-76f91000-76f92000 rw-p 00015000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
+76f27000-76f28000 rw-p 00015000 b3:07 3449       /usr/lib/arm-linux-gnueabihf/libnghttp2.so.14.4.1
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3232,7 +3190,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76f92000-76faa000 r-xp 00000000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
+76f28000-76f40000 r-xp 00000000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
 Size:                 96 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3253,7 +3211,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me dw 
-76faf000-76fb3000 rw-p 00000000 00:00 0 
+76f45000-76f49000 rw-p 00000000 00:00 0 
 Size:                 16 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3274,7 +3232,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76fb8000-76fb9000 rw-p 00000000 00:00 0 
+76f4e000-76f4f000 rw-p 00000000 00:00 0 
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3295,7 +3253,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me ac 
-76fb9000-76fba000 r--p 00017000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
+76f4f000-76f50000 r--p 00017000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3316,7 +3274,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr mw me dw ac 
-76fba000-76fbb000 rw-p 00018000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
+76f50000-76f51000 rw-p 00018000 b3:07 1577070    /lib/arm-linux-gnueabihf/ld-2.23.so
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3337,7 +3295,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me dw ac 
-7ec7a000-7ec9b000 rw-p 00000000 00:00 0          [stack]
+7e96c000-7e98d000 rw-p 00000000 00:00 0          [stack]
 Size:                132 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3358,7 +3316,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd wr mr mw me gd ac 
-7eeb2000-7eeb3000 r-xp 00000000 00:00 0          [sigpage]
+7ec9a000-7ec9b000 r-xp 00000000 00:00 0          [sigpage]
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3379,7 +3337,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd ex mr mw me de 
-7eeb3000-7eeb4000 r--p 00000000 00:00 0          [vvar]
+7ec9b000-7ec9c000 r--p 00000000 00:00 0          [vvar]
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
@@ -3400,7 +3358,7 @@ Swap:                  0 kB
 SwapPss:               0 kB
 Locked:                0 kB
 VmFlags: rd mr de 
-7eeb4000-7eeb5000 r-xp 00000000 00:00 0          [vdso]
+7ec9c000-7ec9d000 r-xp 00000000 00:00 0          [vdso]
 Size:                  4 kB
 KernelPageSize:        4 kB
 MMUPageSize:           4 kB
