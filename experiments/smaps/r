@@ -1,0 +1,11 @@
+#!/bin/bash
+
+tput reset
+python read_smaps.py 1 $1
+python read_smaps.py 2 $1
+python read_smaps.py 3 $1
+python read_smaps.py 4 $1
+#python read_smaps.py 5 $1
+#python read_smaps.py 6 $1
+#python read_smaps.py 7 $1
+#python read_smaps.py 8 $1
