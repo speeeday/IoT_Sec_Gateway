@@ -1,0 +1,13 @@
+#!/bin/bash
+
+while true; do
+    grep -q '^1$' "/sys/class/net/eth0/carrier" &&
+	grep -q '^1$' "/sys/class/net/eth1/carrier" &&
+	break
+
+    sleep 1
+
+done
+#exec /bin/bash
+
+LD_LIBRARY_PATH="/testvolume/lib/arm-linux-gnueabihf:/testvolume/usr/lib/arm-linux-gnueabihf:/testvolume/usr/lib:/testvolume/lib:/testvolume/usr/local/lib:/testvolume/lib/arm-linux-gnueabihf" /testvolume/usr/local/bin/snort -Q --daq afpacket --daq-var buffer_size_mb=1 -i eth0:eth1 -c /testvolume/etc/snort/etc/snort.conf -l /testvolume/var/log/snort

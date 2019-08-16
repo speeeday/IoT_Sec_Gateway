@@ -1,0 +1,1 @@
+alert icmp 172.18.0.1 any -> any any (msg:"ICMP Packet DETECTED (sanity check)"; sid:10000002; rev:1;)

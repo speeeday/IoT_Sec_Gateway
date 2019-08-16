@@ -66,7 +66,7 @@ COPY snort.conf /etc/snort/snort.conf
 COPY local.rules /etc/snort/rules/local.rules 
 COPY run.sh run.sh
 
-CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb=10", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
+CMD ["-Q", "--daq", "afpacket", "--daq-var", "buffer_size_mb=1", "-i", "eth0:eth1", "-c", "/etc/snort/snort.conf", "-l", "/var/log/snort/"]
 
 ENTRYPOINT ["/run.sh"]
 #ENTRYPOINT ["/idle.sh"]
